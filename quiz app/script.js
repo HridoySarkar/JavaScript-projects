@@ -1,25 +1,25 @@
 const quizData = [
     {
-        question: "How old are you",
+        question: "How old are you?",
         a: '10',
         b: '17',
         c: '18',
         d: '20',
         correct: 'd'
     },{
-        question: "Which is your Name",
+        question: "Which is your Name?",
         a: 'Hridoy',
         b: 'Mahim',
         c: 'Jeba',
         d: 'Tonny',
         correct: 'a'
     },{
-        question: "How old your Friend",
-        a: '10',
-        b: '17',
-        c: '24',
-        d: '20',
-        correct: 'c'
+        question: "Which is the best place in your city?",
+        a: 'Housing',
+        b: 'PDB',
+        c: 'Nau Gath',
+        d: 'HTC',
+        correct: 'a'
     },{
         question: "How old are you",
         a: '10',
@@ -76,7 +76,6 @@ function getSelected(){
         }
     });
     return answer;
-
 }
 
 
@@ -87,7 +86,6 @@ submitBtn.addEventListener('click',() =>{
         if(answer === quizData[currentQuiz].correct){
             score++;
         }
-
 
         currentQuiz++;
         if(currentQuiz < quizData.length){
